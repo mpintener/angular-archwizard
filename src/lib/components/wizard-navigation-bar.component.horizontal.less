@@ -5,7 +5,7 @@
 @wz-color-current: #9c27b0;
 @wz-color-done: #E6E6E6;
 @wz-color-optional: #E6E6E6;
-@wz-color-editing: #9E9E9E;
+@wz-color-editing: #E6E6E6;
 
 /*
  dot definitions
@@ -444,7 +444,7 @@ aw-wizard-navigation-bar.horizontal {
           padding-top: @text-padding-bottom;
           color: @wz-color-current;
           line-height: @text-height;
-          font-size: @text-height;
+          font-size: 10px;
           text-decoration: none;
           text-transform: uppercase;
           text-align: center;
@@ -456,7 +456,6 @@ aw-wizard-navigation-bar.horizontal {
 
     li a:hover .label {
       color: darken(@wz-color-current, 20%);
-      font-weight: 700;
     }
 
     // default steps shouldn't change when hovered, because they aren't clickable
@@ -474,6 +473,26 @@ aw-wizard-navigation-bar.horizontal {
       .label {
         color: #9e9e9e;
       }
+    }
+
+    aw-wizard-navigation-bar.horizontal.large-empty-symbols ul.steps-indicator li.editing .step-indicator {
+      border: 2px solid @wz-color-current;
+    }
+
+    li.done  {
+      a {
+        div.label {
+          color: @wz-color-current;
+        }
+        div.step-indicator {
+          border: 2px solid @wz-color-current;
+        }
+      }
+    }
+
+    li.done.navigable {
+      color: #9e9e9e;
+      border: 2px solid #9e9e9e;
     }
 
     li.navigable {
