@@ -1,6 +1,6 @@
 /*
- color definitions
- */
+color definitions
+*/
 @wz-color-default: #E6E6E6;
 @wz-color-current: #9c27b0;
 @wz-color-done: #E6E6E6;
@@ -8,8 +8,8 @@
 @wz-color-editing: #E6E6E6;
 
 /*
- dot definitions
- */
+dot definitions
+*/
 @dot-border-width: 2px;
 
 // small definitions
@@ -21,8 +21,8 @@
 @big-dot-height: 50px;
 
 /*
- extra distance between the bottom of the dots and the baseline texts
- */
+extra distance between the bottom of the dots and the baseline texts
+*/
 @dot-baseline-distance: 0px;
 
 // padding between text and baseline
@@ -479,20 +479,22 @@ aw-wizard-navigation-bar.horizontal {
       border: 2px solid @wz-color-current;
     }
 
-    li.done  {
-      a {
-        div.label {
-          color: @wz-color-current;
-        }
-        div.step-indicator {
-          border: 2px solid @wz-color-current;
-        }
+    li.done a {
+      div.label {
+        color: @wz-color-current;
+      }
+      div.step-indicator {
+        border: 2px solid @wz-color-current;
       }
     }
 
-    li.done.navigable {
-      color: #9e9e9e;
-      border: 2px solid #9e9e9e;
+    li.done.navigable a {
+      div.label {
+        color: #9e9e9e;
+      }
+      div.step-indicator {
+        border: 2px solid #9e9e9e;
+      }
     }
 
     li.navigable {
